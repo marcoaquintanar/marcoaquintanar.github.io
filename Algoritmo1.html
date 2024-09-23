@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo1</title>
+    <script>
+        function Multiplos() {
+            if(!isNaN(document.getElementById("num1").value) && !isNaN(document.getElementById("num2").value)){
+                 var a=document.getElementById("num1").value;
+                 var b=document.getElementById("num2").value;
+                 var multiplos = "";
+
+            for(let i = a; i <= b; i++){
+                if(i%3==0){
+                    multiplos+= `${i} <br>`;
+                }    
+            } 
+            if(a !=b){
+                for(let i = a; i>= b; i--){
+                    if(i % 3 == 0){
+                        multiplos += `${i} <br>`;
+                    }
+                }
+            }  
+            document.getElementById("out").innerHTML = `Resultado:<br> Los multiplos de 3 entre ${a} y de ${b} son:<br> ${multiplos}`;
+          } else {
+            document.getElementById("out").innerHTML = `Existe un error en el tipo de datos ingresados`;
+          }
+        }
+    </script>
+</head>
+<body bgcolor="#eed8f5">
+    <p><a href= "index.html">Regresar al menu</a> <br></p>
+    Encontrar e imprimir todos los numeros comprendidos entre dos enteros que son multiplos de 3. <br>
+    Dato 1 <input type="text" id="num1"><br>
+    Dato 2 <input type="text" id="num2"><br>
+    <input type="button" value="Encontrar los multiplos de 3" onclick="Multiplos()"><br>
+    <p- id="out">Resultado:</p><br>
+
+    <img src="https://th.bing.com/th/id/OIP.1k4X96N1Fc_p7Catzr3pmQHaHa?rs=1&pid=ImgDetMain"/>
+</body>
+</html>
