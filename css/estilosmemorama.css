@@ -1,0 +1,8 @@
+.imagen {
+    width: 200px;
+    height: 200px;
+}
+
+table{
+    background-image: url(".img/fondo1.jpeg");
+}
