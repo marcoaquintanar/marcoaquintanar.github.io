@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilospilas.css">
+    <script src="./js/pilasofuscated.js"></script>
+</head>
+<body bgcolor="#eed8f5" onload="Aleatorias()">
+    <p><a href="index.html">Regresar al menú</a><br></p>
+    <h1>Pila generica</h1>
+    Desarrolle una aplicacion que muestre un objeto tipo pila, e implemente los metodos Push(), Pop(), Peek(), Clear(), Find(),
+    isEmpty()
+    <br>Elemento: <input type="text" id="Elemento" onkeyup="CambioTexto()">
+    <input type="button" value="Push()" id="iPush" onclick="Push(); Aleatorias();">
+    <input type="button" value="Pop()" id="iPop" onclick="Pop()">
+    <input type="button" value="Peek()" id="iPeek" onclick="Peek()">
+    <input type="button" value="Clear()" id="iClear" onclick="Clear()">
+    <input type="button" value="Find()" id="iFind" onclick="Find();">
+    <input type="button" value="isEmpty()" id="iEmpty" onclick="isEmpty()";>
+    <table>
+        <tbody id="tabla"></tbody>
+    </table>
+    <img src="https://2.bp.blogspot.com/-sTqeNP1NsZ8/V0PhawihffI/AAAAAAAAALs/Q8pl3vBdS2kxo8XiGR832SQ_DIJXgMKJACKgB/s1600/PILAS.jpg" alt="Imagen de pila">
+    <h3 id="mensaje"></h3>
+</body>
+</html>
